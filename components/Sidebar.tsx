@@ -41,7 +41,7 @@ function Sidebar() {
   ];
 
   return (
-    <div className="w-[300px] min-w-[300px] flex flex-col gap-4 border-r min-h-screen p-4">
+    <div className="fixed w-[300px] min-w-[300px] flex flex-col gap-4 border-r min-h-screen p-4">
       <div className="">
         <Useritem />
       </div>
