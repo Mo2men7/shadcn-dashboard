@@ -1,9 +1,11 @@
-import { Button } from "@/components/ui/button";
+import GeneralCard from "@/components/cards/General";
 
 export default function Home() {
   return (
     <div>
-      <Button>Test</Button>
+      <div className="grid grid-cols-2">
+        <GeneralCard />
+      </div>
     </div>
   );
 }
