@@ -14,13 +14,20 @@ import {
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { useTheme } from "next-themes";
 import { Button } from "./ui/button";
+import { SidebarTrigger } from "./ui/sidebar";
 
 function Navbar() {
   const { setTheme } = useTheme();
+  // const { toggleSidebar } = useSidebar();
 
   return (
-    <nav className="p-4 flex items-center justify-between">
-      <div>{/* Button to collapse */}</div>
+    <nav className="py-4 px-6 flex items-center justify-between">
+      <div>
+        <SidebarTrigger />
+        {/* <Button variant="outline" onClick={toggleSidebar}>
+          Collapse Sidebar Button
+        </Button> */}
+      </div>
 
       <div className="flex items-center gap-4">
         <Link href="/">Dashboard</Link>
